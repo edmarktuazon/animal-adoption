@@ -1,0 +1,23 @@
+/** @format */
+.message {
+	width: 18.75rem;
+	display: grid;
+	gap: 1.25rem;
+}
+.message-answer {
+	background-color: rgb(7, 170, 211);
+	color: #fff;
+	padding: 0.75rem;
+	border-radius: 10px;
+}
+.modal-questions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.25rem;
+	padding: 1.25rem;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 18.75rem;
+}
