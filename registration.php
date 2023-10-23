@@ -33,11 +33,9 @@
 <body class="font-inter">
     <?php
 require('database.php');
-// Check if the form has been submitted
 if (isset($_POST['submit'])) {
     $username = stripslashes($_POST['username']);
     $password = stripslashes($_POST['password']);
-    // Check if all fields are empty
     if (empty($username) || empty($password)) {
         echo "<script>
             Swal.fire({
@@ -68,7 +66,6 @@ if (isset($_POST['submit'])) {
           $query = "INSERT INTO `accounts` (username, password)
           VALUES ('$username', '" . md5($password) . "')";
 
-
             $result = mysqli_query($con, $query);
 
             if ($result) {
@@ -95,7 +92,6 @@ if (isset($_POST['submit'])) {
         }
     }
 } else {
-    // Your registration form HTML here
 ?>
 
     <section
@@ -137,7 +133,6 @@ if (isset($_POST['submit'])) {
         <?php
     }
 ?>
-
     </section>
 
     <!-- custom js -->
